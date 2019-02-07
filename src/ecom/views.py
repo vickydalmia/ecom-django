@@ -47,3 +47,6 @@ def register_view(request):
                 username=username, password=password, email=email)
             print(new_user)
     return render(request, 'auth/register.html', {'form': form})
+
+def home(request):
+    return render(request, 'home.html')
